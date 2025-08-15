@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Minecraft Server Development (Monthly)!" />
     <meta property="og:description" content="Minecraft server development monthly subscription" />
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1403730427117834252/1405926160151351387/mcdev.png?ex=68a09a45&is=689f48c5&hm=237803a3843100042d615c9f440d12a5c2832bc467fe55c4a2f4ce96a3dfd71d&" />
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1403730427117834252/1405926160151351387/mcdev.png" />
     <meta property="og:url" content="https://mcdev.help/subscribe" />
 
-    <!-- Add a short delay before redirection -->
-    <script type="text/javascript">
+    <title>Redirecting to Subscription</title>
+
+    <script>
+        // Redirect after a short delay (allowing previews to be fetched)
         setTimeout(function() {
             if (window.location.pathname === "/subscribe") {
                 window.location.href = "https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-6MW96683VH862114RNCPUMJA";
             }
-        }, 1000); // 3-second delay
+        }, 100); // delay in ms — keep small so user isn't stuck
     </script>
 </head>
 <body>
-    <p>Redirecting to subscription.</p>
+    <p>Redirecting to subscription...</p>
 </body>
 </html>
